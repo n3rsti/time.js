@@ -1,14 +1,12 @@
-
+<p align="center">
+  <img width="400" height="400" src="https://github.com/n3rsti/time.js/blob/master/logo.png">
+</p>
 
 # time.js
 
 Library created with Javascript which you can use to get data about current date and use it, for example on your website
 
 ## Setup
-
-<p align="center">
-  <img width="400" height="400" src="https://github.com/n3rsti/time.js/blob/master/logo.png">
-</p>
 
 ### Clone repository
 
