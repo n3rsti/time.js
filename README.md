@@ -18,7 +18,7 @@ git clone https://github.com/n3rsti/time.js.git
 <script src="time.js/app.js"></script>
 ```
 
-### Get time to your mark, for example
+### Get time to your mark, for example:
 ```html
 <h1 id="hour"></h1>
 <!-- Output: current hour -->
@@ -38,6 +38,8 @@ git clone https://github.com/n3rsti/time.js.git
 - dmy = day + month + year, for example 22.04.2019
 - dtmy = day + translated-month + year, for example 22 April 2019
 - hm = hour + minute, for example 17:59
+- full-time = full date + full time
+- short-month = short name of the month, for example: Jan.
 
 
 ### Author: [Krzysztof Witucki](https://github.com/n3rsti)

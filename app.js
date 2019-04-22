@@ -7,46 +7,41 @@ function time() {
     let minute = date.getMinutes();
     let second = date.getSeconds();
 
-    let translatedMonth;
-    let translatedDay;
-    let shortDay;
-    let fullTime;
+    let translatedMonth = new Intl.DateTimeFormat('en', {
+        month: "long"
+    })
+    let shortMonth = new Intl.DateTimeFormat('en', {
+        month: 'short'
+    })
+    let translatedDay = new Intl.DateTimeFormat('en', {
+        weekday: 'long'
+    })
+    let shortDay = new Intl.DateTimeFormat('en', {
+        weekday: 'short'
+    })
+    let dTmy = new Intl.DateTimeFormat('en', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+    })
+    let hm = new Intl.DateTimeFormat('en', {
+        hour: 'numeric',
+        minute: 'numeric'
+    })
+    let dmy = new Intl.DateTimeFormat('en', {
+        day: 'numeric',
+        month: 'numeric',
+        year: 'numeric'
+    })
+    let fullTime = new Intl.DateTimeFormat('en', {
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+    })
 
-    const months = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
-    ]
-    const days = [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday'
-    ]
-    const shortDays = [
-        'Mon.',
-        'Tue.',
-        'Wed.',
-        'Thu.',
-        'Fri.',
-        'Sat.',
-        'Sun.'
-    ]
-    translatedMonth = months[month - 1];
-    translatedDay = days[day - 1];
-    shortDay = shortDays[day - 1];
     let yearText = document.getElementById('year');
     let monthText = document.getElementById('month');
     let dayText = document.getElementById('day');
@@ -60,50 +55,51 @@ function time() {
     let dmyText = document.getElementById('dmy');
     let dTmyText = document.getElementById('dtmy');
     let hmText = document.getElementById('hm');
+    let shortMonthText = document.getElementById('short-month');
 
-    fullTime = year + ':' + month + ':' + day + ':' + hour + ':' + minute + ':' + second;
-    let dmy = day + '.' + month + '.' + year;
-    let dTmy = day + ' ' + translatedMonth + ' ' + year;
-    let hm = hour + ':' + minute
-    
-    if(yearText){
+
+
+    if (yearText) {
         yearText.innerText = year;
     }
-    if(monthText){
+    if (monthText) {
         monthText.innerText = month;
     }
-    if(dayText){
+    if (dayText) {
         dayText.innerText = day;
     }
-    if(hourText){
+    if (hourText) {
         hourText.innerText = hour;
     }
-    if(minuteText){
+    if (minuteText) {
         minuteText.innerText = minute;
     }
-    if(secondText){
+    if (secondText) {
         secondText.innerText = second;
     }
-    if(translatedDayText){
-        translatedDayText.innerText = translatedDay;
+    if (translatedDayText) {
+        translatedDayText.innerText = translatedDay.format(new Date());
     }
-    if(translatedMonthText){
-        translatedMonthText.innerText = translatedMonth;
+    if (translatedMonthText) {
+        translatedMonthText.innerText = translatedMonth.format(new Date());
     }
-    if(shortDayText){
-        shortDayText.innerText = shortDay;
+    if (shortDayText) {
+        shortDayText.innerText = shortDay.format(new Date());
     }
-    if(fullTimeText){
-        fullTimeText.innerText = fullTime;
+    if (fullTimeText) {
+        fullTimeText.innerText = fullTime.format(new Date());
     }
-    if(dmyText){
-        dmyText.innerText = dmy;
+    if (dmyText) {
+        dmyText.innerText = dmy.format(new Date());
     }
-    if(dTmyText){
-        dTmyText.innerText = dTmy;
+    if (dTmyText) {
+        dTmyText.innerText = dTmy.format(new Date());
     }
-    if(hmText){
-        hmText.innerText = hm;
+    if (hmText) {
+        hmText.innerText = hm.format(new Date());
+    }
+    if (shortMonthText) {
+        shortMonthText.innerText = shortMonth.format(new Date());
     }
 
 }
