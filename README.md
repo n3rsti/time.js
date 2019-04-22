@@ -1,4 +1,8 @@
-# **time.js** :watch:
+<p align="center">
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
+
+<h1 style="text-align: center">time.js<h1>
 
 Library created with Javascript which you can use to get data about current date and use it, for example on your website
 
@@ -6,18 +10,18 @@ Library created with Javascript which you can use to get data about current date
 
 ### Clone repository
 ```
-    git clone 
+git clone 
 ```
 
 ### Link javascript file
 ```html
-    <script src="time.js/app.js"></script>
+<script src="time.js/app.js"></script>
 ```
 
 ### Get time to your mark, for example
 ```html
-    <h1 id="hour"></h1>
-    <!-- Output: current hour -->
+<h1 id="hour"></h1>
+<!-- Output: current hour -->
 ```
 
 ### Full id documentation
