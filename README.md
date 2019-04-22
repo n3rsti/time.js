@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="400" height="400" src="https://github.com/n3rsti/time.js/blob/master/logo.png">
-</p>
+
 
 # time.js
 
@@ -8,14 +6,17 @@ Library created with Javascript which you can use to get data about current date
 
 ## Setup
 
+<p align="center">
+  <img width="400" height="400" src="https://github.com/n3rsti/time.js/blob/master/logo.png">
+</p>
 ### Clone repository
 ```
-git clone https://github.com/n3rsti/time.js.git
+npm i time-pack.js
 ```
 
 ### Link javascript file
 ```html
-<script src="time.js/app.js"></script>
+<script src="node_modules/time-pack.js/time.min.js"></script>
 ```
 
 ### Get time to your mark, for example:

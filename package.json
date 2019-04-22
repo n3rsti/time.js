@@ -1,0 +1,25 @@
+{
+  "name": "time-pack.js",
+  "version": "1.0.2",
+  "description": "Package created with Javascript which you can use to get data about current date and time and use it, for example on your website.",
+  "main": "time.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n3rsti/time.js.git"
+  },
+  "keywords": [
+    "time",
+    "time.js",
+    "date",
+    "date.js"
+  ],
+  "author": "n3rsti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n3rsti/time.js/issues"
+  },
+  "homepage": "https://github.com/n3rsti/time.js#readme"
+}
