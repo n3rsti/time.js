@@ -4,7 +4,7 @@
 
 # time.js
 
-## Library created with Javascript which you can use to get data about current date and use it, for example on your website
+Library created with Javascript which you can use to get data about current date and use it, for example on your website
 
 ## Setup
 
