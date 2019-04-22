@@ -1,8 +1,8 @@
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="460" height="400" src="https://github.com/n3rsti/time.js/blob/master/logo.png">
 </p>
 
-<h1 style="text-align: center">time.js<h1>
+<h1 align="center">time.js</h1>
 
 Library created with Javascript which you can use to get data about current date and use it, for example on your website
 
