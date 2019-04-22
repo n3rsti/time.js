@@ -10,7 +10,7 @@ Library created with Javascript which you can use to get data about current date
 
 ### Clone repository
 ```
-git clone 
+git clone https://github.com/n3rsti/time.js.git
 ```
 
 ### Link javascript file
