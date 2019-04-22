@@ -12,89 +12,41 @@ function time() {
     let shortDay;
     let fullTime;
 
-    switch (month) {
-        case 0:
-            translatedMonth = 'January';
-            break;
-        case 1:
-            translatedMonth = 'February';
-            break;
-        case 2:
-            translatedMonth = 'March';
-            break;
-        case 3:
-            translatedMonth = 'April';
-            break;
-        case 4:
-            translatedMonth = 'May';
-            break;
-        case 5:
-            translatedMonth = 'June';
-            break;
-        case 6:
-            translatedMonth = 'July';
-            break;
-        case 7:
-            translatedMonth = 'August';
-            break;
-        case 8:
-            translatedMonth = 'September';
-            break;
-        case 9:
-            translatedMonth = 'October';
-            break;
-        case 10:
-            translatedMonth = 'November';
-            break;
-        case 11:
-            translatedMonth = 'December';
-            break;
-
-    }
-    switch (day) {
-        case 1:
-            translatedDay = 'Monday';
-            break;
-        case 2:
-            translatedDay = 'Tuesday';
-            break;
-        case 3:
-            translatedDay = 'Wednesday';
-            break;
-        case 4:
-            translatedDay = 'Thursday';
-            break;
-        case 5:
-            translatedDay = 'Friday';
-            break;
-        case 6:
-            translatedDay = 'Saturday';
-            break;
-        case 7:
-            translatedDay = 'Sunday';
-    }
-    switch (day) {
-        case 1:
-            shortDay = 'Mon.';
-            break;
-        case 2:
-            shortDay = 'Tue.';
-            break;
-        case 3:
-            shortDay = 'Wed.';
-            break;
-        case 4:
-            shortDay = 'Thu.';
-            break;
-        case 5:
-            shortDay = 'Fri.';
-            break;
-        case 6:
-            shortDay = 'Sat.';
-            break;
-        case 7:
-            shortDay = 'Sun.';
-    }
+    const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+    ]
+    const days = [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday'
+    ]
+    const shortDays = [
+        'Mon.',
+        'Tue.',
+        'Wed.',
+        'Thu.',
+        'Fri.',
+        'Sat.',
+        'Sun.'
+    ]
+    translatedMonth = months[month - 1];
+    translatedDay = days[day - 1];
+    shortDay = shortDays[day - 1];
     let yearText = document.getElementById('year');
     let monthText = document.getElementById('month');
     let dayText = document.getElementById('day');
@@ -107,10 +59,12 @@ function time() {
     let fullTimeText = document.getElementById('full-time');
     let dmyText = document.getElementById('dmy');
     let dTmyText = document.getElementById('dtmy');
+    let hmText = document.getElementById('hm');
 
     fullTime = year + ':' + month + ':' + day + ':' + hour + ':' + minute + ':' + second;
     let dmy = day + '.' + month + '.' + year;
     let dTmy = day + ' ' + translatedMonth + ' ' + year;
+    let hm = hour + ':' + minute
     
     if(yearText){
         yearText.innerText = year;
@@ -147,6 +101,9 @@ function time() {
     }
     if(dTmyText){
         dTmyText.innerText = dTmy;
+    }
+    if(hmText){
+        hmText.innerText = hm;
     }
 
 }

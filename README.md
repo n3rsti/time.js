@@ -37,6 +37,7 @@ git clone https://github.com/n3rsti/time.js.git
 - short-day = short name of the day, for example: Mon.
 - dmy = day + month + year, for example 22.04.2019
 - dtmy = day + translated-month + year, for example 22 April 2019
+- hm = hour + minute, for example 17:59
 
 
 ### Author: [Krzysztof Witucki](https://github.com/n3rsti)
