@@ -2,9 +2,9 @@
   <img width="400" height="400" src="https://github.com/n3rsti/time.js/blob/master/logo.png">
 </p>
 
-<h1 align="center" size="50px">time.js</h1>
+# time.js
 
-Library created with Javascript which you can use to get data about current date and use it, for example on your website
+## Library created with Javascript which you can use to get data about current date and use it, for example on your website
 
 ## Setup
 
