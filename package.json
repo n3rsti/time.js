@@ -1,6 +1,6 @@
 {
   "name": "time-pack.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Package created with Javascript which you can use to get data about current date and time and use it, for example on your website.",
   "main": "time.min.js",
   "scripts": {

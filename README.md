@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="400" height="400" src="https://github.com/n3rsti/time.js/blob/master/logo.png">
+  <img width="350" height="350" src="https://github.com/n3rsti/time.js/blob/master/logo.png">
 </p>
 
 # time.js
